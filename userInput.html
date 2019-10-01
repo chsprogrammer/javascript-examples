@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function gradeChecker(){
+                var grade=document.getElementById('grade').value
+                document.getElementById("response").innerHTML = grade;
+            }
+        </script>
+    </head>
+    <body>
+                First name:<br>
+                <input type="text" id="firstname"><br>
+                Grade:<br>
+                <input type="text" id="grade"><br>
+                <button type="submit" onclick="gradeChecker()">SUBMIT</button>
+                <p id="response"></p>
+    </body>
+</html>
