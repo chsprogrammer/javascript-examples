@@ -16,7 +16,12 @@ var main = function(){
     //create an event handler: when comment input button is clicked then call the addCommentFunction
     $(".comment-input button").on("click", function (event){addCommentFromInputBox()
     });
+    
+    $(".comment-input input").on("keypress", function(event) { 
+        console.log(event.keyCode);
+    });
 };
+
 
 //call the main function
 $(document).ready(main);
